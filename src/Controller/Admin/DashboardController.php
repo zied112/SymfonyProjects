@@ -22,7 +22,6 @@ class DashboardController extends AbstractDashboardController
 
     public function index(): Response
     {
-        // redirect to some CRUD controller
         $routeBuilder = $this->get(AdminUrlGenerator::class);
         return $this->redirect($routeBuilder->setController(ProduitCrudController::class)->generateUrl());
     }
