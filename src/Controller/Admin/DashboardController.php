@@ -17,8 +17,10 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractDashboardController;
 class DashboardController extends AbstractDashboardController
 {
     /**
-     * @Route("/{_locale}/admin", name="admin",requirements={"_locale": "en|fr" })
+     * @Route("/{_locale}/admin", name="admin",)
      */
+
+    /*requirements={"_locale": "en|fr|ar" }*/
 
     public function index(): Response
     {
